@@ -22,6 +22,7 @@ ng generate component components/about-me
 
 ng generate component components/page-not-found
 
+ng generate component components/render-blog
 
 
 
@@ -51,4 +52,3 @@ Cuando tu ejecutas ng new my-first-project se creará una nueva carpeta, llamada
 Si tu actual directorio de trabajo no es el lugar adecuado para tu proyecto, lo puedes cambiar a un directorio más apropiado ejecutando primero cd <path-to-other-directory>.
 
 
-/mnt/c:/Users/Oscar/Documents/Document/MastersAnalytics/AnaliticaGrandesDatos/Labs
