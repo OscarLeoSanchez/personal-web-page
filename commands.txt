@@ -1,0 +1,54 @@
+# ejecutar contenedor
+docker run --rm -it --name angular -e NODE_ENV=development -p 4200:4200 -v "$PWD":/workspace oscarleosanchez/angular
+
+docker exec -it angular bash
+
+ng new project-name
+
+# Generar componenetes
+
+ng generate component name_componets
+ng g c name_componets
+
+ng serve --host 0.0.0.0 --disable-host-check
+
+# debug
+ng serve --host 0.0.0.0 --disable-host-check --configuration=development --watch
+
+------------------------------------------------
+commands
+
+ng generate component components/about-me
+
+ng generate component components/page-not-found
+
+
+
+
+
+
+
+
+
+
+
+Flujo de trabajo básico
+Ejecute la herramienta en la línea de comandos a través del ejecutable ng. La ayuda se encuentra disponible en la línea de comandos. Ingrese lo siguiente para listar comandos u opciones para un comando dado (Ejemplo: generate) con una breve descripción.
+
+content_copy
+ng help
+ng generate --help
+Para crear, construir y servir un nuevo proyecto de Angular básico en el servidor de desarrollo, ve al directorio padre de tu nueva área de trabajo, usa los siguientes comandos:
+
+content_copy
+ng new my-first-project
+cd my-first-project
+ng serve
+En tu navegador, abre http://localhost:4200/ para ver como se esta ejecutando la nueva aplicación. Cuando usas el comando ng serve para construir una aplicación y servirla localmente, el servidor automáticamente reconstruye la aplicación y recarga la página cuando tu cambias cualquiera de los archivos base.
+
+Cuando tu ejecutas ng new my-first-project se creará una nueva carpeta, llamada my-first-project, en tu actual directorio de trabajo. Cuando tu quieres crear archivos dentro de una carpeta, asegurate que tienes los permisos necesarios en tu actual directorio de trabajo antes de ejecutar el comando.
+
+Si tu actual directorio de trabajo no es el lugar adecuado para tu proyecto, lo puedes cambiar a un directorio más apropiado ejecutando primero cd <path-to-other-directory>.
+
+
+/mnt/c:/Users/Oscar/Documents/Document/MastersAnalytics/AnaliticaGrandesDatos/Labs
