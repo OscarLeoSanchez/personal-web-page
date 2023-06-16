@@ -9,7 +9,7 @@ import { NewsService } from './services/news.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'web-page';
+  title = 'OscarLeoSanchez';
 
   constructor(private sharedService: SharedService, private newsService: NewsService) { }
 
@@ -32,8 +32,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.sharedService.datos$.subscribe((data: any) => {
-      console.log('soy el padre');
-      console.log(data);
+      // console.log('soy el padre');
+      // console.log(data);
       this.newsService.getNews(data).then((data: any) => {
         console.log(data);
       });
