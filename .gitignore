@@ -45,3 +45,4 @@ Thumbs.db
 */.bi
 web-page/node_modules/.bin/*
 web-page/node_modules/*
+web-page/.angular/*
